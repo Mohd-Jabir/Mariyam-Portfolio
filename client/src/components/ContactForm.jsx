@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-import { useContact } from "../hooks/useContact";
+import { useContact } from "../hooks/useContact.js";
 
 const ContactForm = () => {
   const { mutate, isPending, isSuccess, isError, error } = useContact();
