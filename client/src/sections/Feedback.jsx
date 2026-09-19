@@ -4,7 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { useFeedback } from "../hooks/useFeedback";
+import { useFeedback } from "../hooks/useFeedback.js";
 import FeedbackCard from "../components/FeedbackCard.jsx";
 import FeedbackForm from "../components/FeedbackForm.jsx";
 
