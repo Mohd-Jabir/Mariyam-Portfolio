@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon: #4d0000;
+  --color-maroon-dark: #320000;
+
+  --color-white: #ffffff;
+  --color-off-white: #f7f7f5;
+
+  --color-black: #0b0b0b;
+  --color-ink: #151515;
+
+  --color-gray: #8a8a8a;
+  --color-gray-dark: #4b4b4b;
+  --color-border: #dededb;
+}
+
+/* Hide scrollbar but keep scrolling */
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
