@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { submitFeedback,getFeedback } from "../api/feedbackapi.js";
+import { submitFeedback,getFeedback } from "../api/feedbackApi.js";
 
 export const useFeedback = () => {
   const queryClient = useQueryClient();
