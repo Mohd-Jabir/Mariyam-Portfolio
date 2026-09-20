@@ -110,9 +110,6 @@ The contact section provides visitors with a direct way to start a conversation.
 
 It includes:
 
-- Contact information
-- Location
-- Availability indicator
 - Name field
 - Email field
 - Subject field
@@ -148,7 +145,6 @@ The visual identity is intentionally restrained.
 
 - React
 - Vite
-- React Router
 - Tailwind CSS
 - GSAP
 - `@gsap/react`
