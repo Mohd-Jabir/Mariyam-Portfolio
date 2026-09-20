@@ -63,15 +63,6 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
             <p className="truncate font-sans text-sm font-black tracking-[-0.02em] text-ink">
               {feedback.name}
             </p>
-
-            <p className="mt-1 font-mono text-[9px] font-bold uppercase tracking-[0.13em] text-gray">
-              {feedback.createdAt
-                ? new Date(feedback.createdAt).toLocaleDateString(undefined, {
-                    month: "short",
-                    year: "numeric",
-                  })
-                : "Feedback"}
-            </p>
           </div>
 
           {/* Stars */}
