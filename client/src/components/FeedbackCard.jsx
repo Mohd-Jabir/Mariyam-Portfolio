@@ -55,7 +55,7 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
       `}
     >
       {/* =====================================================
-          NORMAL CARD HEADER
+          TOP META
       ===================================================== */}
 
       <div
@@ -86,7 +86,7 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
       </div>
 
       {/* =====================================================
-          QUOTE MARK
+          GIANT QUOTATION MARK
       ===================================================== */}
 
       <div
@@ -108,6 +108,39 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
       </div>
 
       {/* =====================================================
+          FULL VOICE LABEL
+      ===================================================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-8
+          top-8
+          z-30
+
+          translate-y-[-10px]
+
+          font-mono
+          text-[9px]
+          font-bold
+          uppercase
+          tracking-[0.18em]
+          text-maroon
+
+          opacity-0
+
+          transition-all
+          duration-500
+
+          group-hover:translate-y-0
+          group-hover:opacity-100
+        "
+      >
+        Full voice
+      </div>
+
+      {/* =====================================================
           MESSAGE
       ===================================================== */}
 
@@ -126,9 +159,11 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
 
           group-hover:left-8
           group-hover:right-8
-          group-hover:top-8
-          group-hover:h-[410px]
+          group-hover:top-20
+          group-hover:h-[390px]
           group-hover:overflow-y-auto
+
+          scrollbar-thin
         "
       >
         <p
@@ -157,38 +192,6 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
       </div>
 
       {/* =====================================================
-          READING MODE LABEL
-      ===================================================== */}
-
-      <div
-        className="
-          pointer-events-none
-          absolute
-          left-8
-          top-8
-          z-30
-
-          translate-y-[-10px]
-          font-mono
-          text-[9px]
-          font-bold
-          uppercase
-          tracking-[0.18em]
-          text-maroon
-
-          opacity-0
-
-          transition-all
-          duration-500
-
-          group-hover:translate-y-0
-          group-hover:opacity-100
-        "
-      >
-        Full voice
-      </div>
-
-      {/* =====================================================
           BOTTOM META
       ===================================================== */}
 
@@ -211,6 +214,7 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
       >
         <div className="flex items-end justify-between gap-4">
           {/* NAME */}
+
           <div className="min-w-0">
             <p className="truncate font-sans text-sm font-black tracking-[-0.02em] text-ink">
               {feedback.name}
@@ -218,6 +222,7 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
           </div>
 
           {/* STARS */}
+
           <div
             className="flex shrink-0 gap-0.5"
             aria-label={`${rating} out of 5 stars`}
@@ -252,12 +257,14 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
           right-6
           top-12
           z-40
+
           flex
           h-9
           w-9
           translate-x-3
           items-center
           justify-center
+
           rounded-full
           bg-ink
           text-sm
@@ -271,15 +278,17 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
           group-hover:translate-x-0
           group-hover:opacity-100
         "
+        aria-hidden="true"
       >
         ↗
       </div>
 
       {/* =====================================================
-          READING MODE EDGE
+          INNER HOVER FRAME
       ===================================================== */}
 
       <div
+        aria-hidden="true"
         className="
           pointer-events-none
           absolute
