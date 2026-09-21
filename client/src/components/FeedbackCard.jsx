@@ -50,11 +50,11 @@ const FeedbackCard = ({ feedback, index = 0 }) => {
       </div>
 
       {/* Main message */}
-      <div className="relative mt-20 flex h-[260px] items-center">
-        <p className="line-clamp-7 font-serif text-[clamp(1.65rem,3vw,2rem)] font-medium leading-[1.08] tracking-[-0.035em] text-ink">
-          {feedback.message}
-        </p>
-      </div>
+      <div className="relative mt-16 flex h-[270px] items-center">
+  <p className="font-serif text-[clamp(1.35rem,2.5vw,1.75rem)] font-medium leading-[1.08] tracking-[-0.03em] text-ink">
+    {feedback.message}
+  </p>
+</div>
 
       {/* Bottom */}
       <div className="absolute bottom-7 left-7 right-7 border-t border-black/10 pt-5">
